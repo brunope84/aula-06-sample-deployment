@@ -51,7 +51,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'aula-cd-brunope84-hom'
-        slot-name: 'homologacao'
         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: .
 
@@ -73,6 +72,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'aula-cd-brunope84'
-        slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_1698e969df994d37b35b50715af24ce5 }}
         package: .
